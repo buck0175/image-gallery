@@ -1,0 +1,360 @@
+/* Color Scheme: #13a841, black */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Code Begins Here */
+
+body {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+strong {
+	font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+label {
+  display: block;
+}
+
+
+
+
+
+
+
+/* Modal Styles */
+.modal {
+	display: none;
+	transition: 2s;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.9);
+	z-index: 999;
+}
+
+.modal-content {
+	margin: 2% auto;
+	width: 50%;
+}
+
+.modal .closeBtn {
+	position: absolute;
+	right: 50px;
+	font-size: 60px;
+	color: white;
+	padding: 0;
+}
+
+.modal .closeBtn:hover {
+	color:#13a841;
+	cursor: pointer;
+}
+
+.modal-content img {
+	width: 750px;
+	margin: 0 auto;
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+aside {
+  background-color: black;
+  color: white;
+  display: inline-block;
+  position: fixed;
+  padding: 0 50px;
+  height: 100%;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+aside .blog-info {
+  position: relative;
+  top: 20em;
+}
+
+aside .blog-info p {
+  margin-top: 10px;
+}
+
+.blog-info img {
+  max-height: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+.blog-info .social-links {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.blog-info .social-links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.blog-info .social-links li a {
+  color: white;
+  font-size: 1.5em;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+.blog-info .social-links li a:hover {
+  color: #13a841;
+  transition: 0.4s;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  left: 30%;
+  width: 70%;
+	background-color: #13a841;
+}
+
+.image-grid .image {
+  width: 100%;
+  height: 100%;
+	z-index: 1;
+	background-color: #13a841;
+}
+
+.back .image-content {
+	max-width: 90%;
+	margin: 220px auto 0;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-area .image {
+  transition: 0.4s;
+	background-color: #13a841;
+}
+
+
+.content-area .image:hover {
+  opacity: 0.5;
+  transition: 0.4s;
+	background-color: #13a841;
+}
+
+.active {
+  transform: scale(1.6);
+}
+
+@keyframes scale {
+  0% {transform: scale(1)}
+  100% {transform: scale(3)}
+}
+
+.add {
+    font-size: 30px;
+    color: white;
+    z-index: 2;
+    position: fixed;
+    top: 10px;
+    left: 27%;
+    transition: 0.4s;
+}
+
+.add:hover {
+  cursor: pointer;
+  color: #13a841;
+  transition: 0.4s;
+}
+
+.image-form {
+  background-color: white;
+  width: 70%;
+  z-index: 100;
+  position: fixed;
+  top: -400px;
+  left: 30%;
+  -webkit-transition: all 1s cubic-bezier(0.420, 0.000, 1.000, 1.000);
+   -moz-transition: all 1s cubic-bezier(0.420, 0.000, 1.000, 1.000);
+     -o-transition: all 1s cubic-bezier(0.420, 0.000, 1.000, 1.000);
+        transition: all 1s cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+
+-webkit-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+   -moz-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000);
+        transition-timing-function: cubic-bezier(0.420, 0.000, 1.000, 1.000); /* ease-in */
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  padding: 10px 0;
+  width: 400px;
+}
+
+input:focus {
+  border: none;
+  border-bottom: 2px dashed #13a841;
+  outline: none;
+}
+
+form {
+  margin-left: 50px;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+textarea {
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.btn {
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#subtract-icon {
+  display: none;
+}
+
+
+.image-add {
+  padding: 20px 0;
+  display: block;
+}
+
+@media screen and (max-width: 1024px) {
+
+  aside {
+    background-color: black;
+    position: fixed;
+    z-index: 900;
+    color: white;
+    display: block;
+    position: fixed;
+    padding: 0 50px;
+    height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .image-grid {
+    display: grid;
+    left: 0;
+    top: 250px;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+  }
+
+  .add {
+    display: none;
+  }
+
+  aside .blog-info {
+    position: relative;
+    top: 1.2em;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}
