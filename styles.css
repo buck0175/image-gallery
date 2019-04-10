@@ -79,12 +79,6 @@ label {
   display: block;
 }
 
-
-
-
-
-
-
 /* Modal Styles */
 .modal {
 	display: none;
@@ -96,11 +90,8 @@ label {
 	width: 100%;
 	background-color: rgba(0,0,0,0.9);
 	z-index: 999;
-}
-
-.modal-content {
-	margin: 2% auto;
-	width: 50%;
+	justify-content: center;
+	align-items: center;
 }
 
 .modal .closeBtn {
@@ -115,23 +106,6 @@ label {
 	color:#13a841;
 	cursor: pointer;
 }
-
-.modal-content img {
-	width: 750px;
-	margin: 0 auto;
-	display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 aside {
   background-color: black;
@@ -189,14 +163,12 @@ aside .blog-info p {
   position: relative;
   left: 30%;
   width: 70%;
-	background-color: #13a841;
 }
 
 .image-grid .image {
   width: 100%;
   height: 100%;
 	z-index: 1;
-	background-color: #13a841;
 }
 
 .back .image-content {
@@ -212,14 +184,12 @@ aside .blog-info p {
 
 .content-area .image {
   transition: 0.4s;
-	background-color: #13a841;
 }
 
 
 .content-area .image:hover {
   opacity: 0.5;
   transition: 0.4s;
-	background-color: #13a841;
 }
 
 .active {
@@ -351,10 +321,18 @@ textarea {
     top: 1.2em;
     text-align: center;
   }
+
+	.modal-content img {
+		width: 600px;
+	}
 }
 
 @media screen and (max-width: 680px) {
   .image-grid {
     grid-template-columns: 1fr;
   }
+
+	.modal-content img {
+		width: 400px;
+	}
 }
