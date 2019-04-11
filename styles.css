@@ -94,6 +94,10 @@ label {
 	align-items: center;
 }
 
+.modal img {
+	max-height: 90%;
+}
+
 .modal .closeBtn {
 	position: absolute;
 	right: 50px;

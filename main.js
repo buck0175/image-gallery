@@ -148,7 +148,6 @@ $imageGrid.addEventListener('click', function(event){
   if($item) {
     $modal.style.display= "flex";
     const $modalHtml = [];
-
     $modalHtml.push(`<div class="modal-content">`);
     $modalHtml.push(`<span class="closeBtn">&times;</span>`);
     $modalHtml.push(`<img src="${$src}" alt="">`);
