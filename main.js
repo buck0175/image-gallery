@@ -5,104 +5,57 @@
 const $imageGrid = document.querySelector('.image-grid');
 
 
+
 // Array holding our image objects
 const images = [
   {
-    image: "https://source.unsplash.com/random/800x800",
-    alt: "Random Image"
+    image: "images/1.jpeg",
+    alt: "Photo of our passports"
   },
   {
-    image: "https://source.unsplash.com/random/900x800",
-    alt: "Random Image"
+    image: "images/2.jpeg",
+    alt: "Atlantic Ocean"
   },
   {
-    image: "https://source.unsplash.com/random/940x800",
-    alt: "Random Image"
+    image: "images/3.jpeg",
+    alt: "Puppy with cute hat"
   },
   {
-    image: "https://source.unsplash.com/random/930x800",
-    alt: "Random Image"
+    image: "images/4.jpeg",
+    alt: "Sitting infront of the whitehouse."
   },
   {
-    image: "https://source.unsplash.com/random/920x800",
-    alt: "Random Image"
+    image: "images/5.jpeg",
+    alt: "Sanfransisco transit"
   },
   {
-    image: "https://source.unsplash.com/random/910x800",
-    alt: "Random Image"
+    image: "images/6.jpeg",
+    alt: "Ocean drone photography"
   },
   {
-    image: "https://source.unsplash.com/random/960x800",
-    alt: "Random Image"
+    image: "images/7.jpeg",
+    alt: "Vintage car"
   },
   {
-    image: "https://source.unsplash.com/random/970x800",
-    alt: "Random Image"
+    image: "images/8.jpeg",
+    alt: "Busy crosswalk"
   },
   {
-    image: "https://source.unsplash.com/random/980x800",
-    alt: "Random Image"
+    image: "images/9.jpeg",
+    alt: "Flying Drone"
   },
   {
-    image: "https://source.unsplash.com/random/990x800",
-    alt: "Random Image"
+    image: "images/10.jpeg",
+    alt: "Desert photography"
   },
   {
-    image: "https://source.unsplash.com/random/950x810",
-    alt: "Random Image"
+    image: "images/11.jpeg",
+    alt: "Louis Vitton headquarters"
   },
   {
-    image: "https://source.unsplash.com/random/950x820",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x830",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x840",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x850",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x860",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x870",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x880",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x890",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x900",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x910",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x920",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x930",
-    alt: "Random Image"
-  },
-  {
-    image: "https://source.unsplash.com/random/950x940",
-    alt: "Random Image"
-  },
+    image: "images/12.jpeg",
+    alt: "Vintage Car"
+  }
 
 ];
 
