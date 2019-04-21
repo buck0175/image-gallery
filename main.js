@@ -4,13 +4,10 @@
 
 const $imageGrid = document.querySelector('.image-grid');
 
-
-
 // Array holding our image objects
 const images = [
-  {
-    image: "images/1.jpeg",
-    alt: "Photo of our passports"
+  {image: "images/1.jpeg",
+  alt: "Photo of our passports"
   },
   {
     image: "images/2.jpeg",
@@ -56,7 +53,6 @@ const images = [
     image: "images/12.jpeg",
     alt: "Vintage Car"
   }
-
 ];
 
 
